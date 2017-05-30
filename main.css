@@ -1,0 +1,43 @@
+.calendar-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.time-container {
+  display: inline-block;
+  width: 10%;
+  line-height: 2em;
+}
+
+.events-container {
+  display: inline-block;
+  background: #E7E7E7;
+  width: 85%;
+  margin: 10px;
+  padding: 0px 10px;
+  overflow: hidden;
+}
+
+.event-container {
+  background: darkblue;
+}
+
+.event {
+  background: white;
+  margin-left: 3px;
+}
+
+p {
+  margin-bottom: -20px;
+  padding-left: 5px;
+  color: darkblue;
+}
+
+span {
+  color: grey;
+}
+
+.time {
+  margin-top: 4px;
+  height: 100px;
+}
