@@ -1,12 +1,18 @@
+body {
+  font-family: sans-serif;
+}
+
 .calendar-container {
   display: flex;
   overflow: hidden;
 }
 
 .time-container {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   width: 10%;
-  line-height: 2em;
+  line-height: 0.9em;
 }
 
 .events-container {
@@ -16,28 +22,36 @@
   margin: 10px;
   padding: 0px 10px;
   overflow: hidden;
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
 .event-container {
   background: darkblue;
+  width: 100%;
+  margin: 3px;
 }
 
 .event {
   background: white;
-  margin-left: 3px;
+  margin: -20px 0px 0px 3px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 p {
   margin-bottom: -20px;
   padding-left: 5px;
   color: darkblue;
+  font-size: 20px;
 }
 
 span {
-  color: grey;
+  color: black;
+  font-size: 80%;
 }
 
 .time {
-  margin-top: 4px;
-  height: 100px;
+  margin-top: 5px;
+  height: 105px;
+  display: flex;
+  justify-content: space-around;
 }
