@@ -6,4 +6,4 @@ This application takes an array of objects from an API containing a users schedu
 
 To fire up the application just clone down this repo, then `cd calendar`, and `open index.html`.
 
-![screenshot](http://imgur.com/a/Jtbau)
+![screenshot](http://i.imgur.com/I2IogJm.png)
