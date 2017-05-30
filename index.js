@@ -17,7 +17,7 @@ var mockevents = [
     name: 'Dinner',
     location: 'Spuntino',
     start: 1800,
-    end: 1900,
+    end: 1950,
     slot: 'sixpm'
   }, 
   {
@@ -43,4 +43,4 @@ Calendar.prototype.add = function() {
 
 var calendar = new Calendar(mockevents)
 
-setTimeout(() => calendar.add(), 500)
+setTimeout(() => calendar.add(), 100)
