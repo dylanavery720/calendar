@@ -28,10 +28,17 @@ var mockevents = [
     slot: 'sixpm'
   }, 
   {
+    name: 'Phonecall w/ Juan',
+    location: 'Google Hangouts',
+    start: 1900,
+    end: 2000,
+    slot: 'sevenpm'
+  }, 
+  {
     name: 'Guest Lecture',
     location: 'Turing',
     start: 1800,
-    end: 2000,
+    end: 2100,
     slot: 'sixpm'
   }
 ]
@@ -43,7 +50,7 @@ function Calendar (events) {
 Calendar.prototype.add = function() {
   this.events.map((event, i) => {
     $(`.events-container #${event.slot}`).append(
-    `<div class="event-container" style="height: ${Math.abs(event.end - event.start) }px"><div class="event" style="height: ${Math.abs(event.end - event.start) }px"><p>${event.name}</p><p><span>${event.location}<span></p></div></div>`
+    `<div class="event-container" style="z-index: ${event.end}; height: ${Math.abs(event.end - event.start) }px"><div class="event" style="height: ${Math.abs(event.end - event.start) }px"><p>${event.name}</p><p><span>${event.location}<span></p></div></div>`
 )
   })
 }
