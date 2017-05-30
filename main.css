@@ -22,16 +22,19 @@ body {
   margin: 10px;
   padding: 0px 10px;
   overflow: hidden;
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
 .event-container {
   background: darkblue;
+  width: 100%;
+  margin: 3px;
 }
 
 .event {
   background: white;
-  margin-left: 3px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
+  margin: -20px 0px 0px 3px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 p {
@@ -48,5 +51,7 @@ span {
 
 .time {
   margin-top: 5px;
-  height: 100px;
+  height: 105px;
+  display: flex;
+  justify-content: space-around;
 }
